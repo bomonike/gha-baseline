@@ -2,7 +2,7 @@ name: 'baseline'
 # **What it does**: Scan Terraform code. Save results on S3 buckets based on credentials from HashiCorp Vault.
 # **Why we have it**: So secrets are not static in GitHub Actions GUI, needing to be repeated in each Action.
 # **Who does it impact**: Docs content.
-on: [commit]
+on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest

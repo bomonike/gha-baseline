@@ -7,7 +7,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: Print initial greeting
+    - name: ❤️ initial greeting
       run: echo "Starting test ..."
-    - name: Print goodbye
+    - name: 🫶 goodbye
       run: echo "Goodbye test"

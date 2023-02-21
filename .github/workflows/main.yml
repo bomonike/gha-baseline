@@ -13,3 +13,6 @@ jobs:
       run: echo "TFlint, TFsec, etc. here ..."
     - name: 🫶 Conditions at end
       run: echo "Stats ..."
+  deploy:
+    needs: test
+  

@@ -1,0 +1,13 @@
+name: 'baseline'
+# **What it does**: Obtains secrets from HashiCorp Vault.
+# **Why we have it**: So secrets are not static in GitHub GUI, needing to be repeated in each Action.
+# **Who does it impact**: Docs content.
+on: [commit]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print initial greeting
+      run: echo "Starting test ..."
+    - name: Print goodbye
+      run: echo "Goodbye test"

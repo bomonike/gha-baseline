@@ -7,7 +7,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: ❤️ initial greeting
-      run: echo "Starting test ..."
-    - name: 🫶 goodbye
-      run: echo "Goodbye test"
+    - name: ❤️ Conditions at start
+      run: echo "Stats ..."
+    - name: ✅ Verify Terraform
+      run: echo "TFlint, TFsec, etc. here ..."
+    - name: 🫶 Conditions at end
+      run: echo "Stats ..."

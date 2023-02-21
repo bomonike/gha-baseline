@@ -4,7 +4,7 @@ name: 'baseline-workflow'
 # **Who does it impact**: Docs content.
 on: [push]
 jobs:
-  test-job:
+  pretest-job:
     runs-on: ubuntu-latest
     steps:
     - name: 🚀 Conditions at start
@@ -14,7 +14,7 @@ jobs:
     - name: 🫶 Conditions at end
       run: echo "Stats ..."
   deploy-job:
-    needs: test-job
+    needs: pretest-job
     runs-on: ubuntu-latest
     steps:
     - name: 🫶 Conditions at end

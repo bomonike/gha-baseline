@@ -15,4 +15,6 @@ jobs:
       run: echo "Stats ..."
   deploy:
     needs: test
+    - name: 🫶 Conditions at end
+      run: echo "Stats ..."
   

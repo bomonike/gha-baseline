@@ -1,10 +1,10 @@
-name: 'baseline'
+name: 'baseline-workflow'
 # **What it does**: Scan Terraform code. Save results on S3 buckets based on credentials from HashiCorp Vault.
 # **Why we have it**: So secrets are not static in GitHub Actions GUI, needing to be repeated in each Action.
 # **Who does it impact**: Docs content.
 on: [push]
 jobs:
-  test:
+  test-job:
     runs-on: ubuntu-latest
     steps:
     - name: ❤️ Conditions at start
@@ -13,8 +13,8 @@ jobs:
       run: echo "TFlint, TFsec, etc. here ..."
     - name: 🫶 Conditions at end
       run: echo "Stats ..."
-  deploy:
-    needs: test
+  deploy-job:
+    needs: test-job
     runs-on: ubuntu-latest
     steps:
     - name: 🫶 Conditions at end
